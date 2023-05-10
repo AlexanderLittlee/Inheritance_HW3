@@ -21,12 +21,18 @@
     <ClCompile Include="Rentable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Flat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RealEstate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Rentable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Flat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
