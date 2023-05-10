@@ -13,7 +13,8 @@ int main() {
 	cout << f.move_in(1) << endl;
 	cout << f.move_in(2) << endl;
 	cout << f.move_in(2) << endl;
-	cout << f.get_people();
+	cout << f.get_people() << endl;
 	cout << f << endl;
+
 	return 1;
 }
