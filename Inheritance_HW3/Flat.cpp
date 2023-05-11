@@ -12,9 +12,6 @@ int Flat::abst() { return 0; }
 
 bool Flat::move_in(const int& noOfPeople)
 {
-	if (mRooms + 1 < noOfPeople+mPeople)
-		return false;
-
 	mPeople += noOfPeople;
 	return true;
 }
@@ -32,8 +29,31 @@ int Flat::get_people() const
 }
 
 
+int Flat::get_rooms() const
+{
+	return mRooms;
+}
+
+
+int Flat::get_area() const
+{
+	return mArea;
+}
+
+
+int Flat::get_costpersqrm() const
+{
+	return mCostPerSqrmtr;
+}
+
+
 std::ostream& operator<<(std::ostream& outputStream, const Flat& flat)
 {
-	outputStream << "/ Area: " << flat.mArea << "m2" << " | " << "Rooms: " << flat.mRooms << " | " << "People: " << flat.mPeople << " | " << "Cost per squaremeter: " << flat.mCostPerSqrmtr << " /";
+	outputStream << "/ "
+					<< "Area: " << flat.mArea << "m2 | "  
+					<< "Rooms: " << flat.mRooms << " | " 
+					<< "People: " << flat.mPeople << " | " 
+					<< "Cost per squaremeter: " << flat.mCostPerSqrmtr
+				<< " /";
 	return outputStream;
 }

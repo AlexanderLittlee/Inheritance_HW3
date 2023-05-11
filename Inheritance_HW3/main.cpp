@@ -1,5 +1,7 @@
 #include "Flat.h"
 #include <iostream>
+#include "Apartment.h"
+
 
 //majd a végén át kéne írni uint16_t-re és összehasonlítani a futásidõt
 using namespace std;
@@ -16,5 +18,10 @@ int main() {
 	cout << f.get_people() << endl;
 	cout << f << endl;
 
+
+
+	Apartment a(60,2,10);
+	
+	;
 	return 1;
 }

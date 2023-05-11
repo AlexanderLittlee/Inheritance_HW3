@@ -8,10 +8,15 @@ public:
 	Flat(const int& area, const int& rooms, const int& people, const int& costpersqrmtr);
 	
 
-	int get_cost() const override;
-	bool move_in(const int& noOfPeople);
-	int get_people() const;
+	virtual bool move_in(const int& noOfPeople);
 	
+	int get_cost() const override;
+	int get_costpersqrm() const;
+	int get_people() const;
+	int get_rooms() const;
+	int get_area() const;
+
+
 	friend std::ostream& operator<<(std::ostream& outputStream, const Flat& flat);
 
 	int abst() override;

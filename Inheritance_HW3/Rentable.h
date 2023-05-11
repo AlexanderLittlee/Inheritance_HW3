@@ -5,9 +5,9 @@ class Rentable {
 public:
 	virtual int abst() = 0;
 
-	int total_cost(const int& numberOfMonths);
-	bool is_reserved() const;
-	bool reserve(const int& numberOfMonths);
+	virtual int total_cost(const int& numberOfMonths);
+	virtual bool is_reserved() const;
+	virtual bool reserve(const int& numberOfMonths);
 
 private:
 	int mCostPerMonth;
