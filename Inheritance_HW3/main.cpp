@@ -8,20 +8,28 @@ using namespace std;
 
 int main() {
 
-	Flat f(100,4,2,200);
-	cout << f << endl;
-	cout << f.get_cost() << endl;
-	cout << f.get_people() << endl;
-	cout << f.move_in(1) << endl;
-	cout << f.move_in(2) << endl;
-	cout << f.move_in(2) << endl;
-	cout << f.get_people() << endl;
-	cout << f << endl;
+	//Flat f(100,4,2,200);
+	//cout << f << endl;
+	//cout << f.get_cost() << endl;
+	//cout << f.get_people() << endl;
+	//cout << f.move_in(1) << endl;
+	//cout << f.move_in(2) << endl;
+	//cout << f.move_in(2) << endl;
+	//cout << f.get_people() << endl;
+	//cout << f << endl << endl;
 
 
 
 	Apartment a(60,2,10);
-	
+	cout << a << endl;
+	cout << a.get_people() << endl;
+	cout << a.is_reserved() << endl;
+	cout << a.total_cost(1) << endl;
+	cout << a.move_in(17) << endl;
+	cout << a.move_in(5) << endl;
+	cout << a.total_cost(1) << endl;
+	cout << a.total_cost(2) << endl;
+	cout << a << endl << endl;
 	;
 	return 1;
 }

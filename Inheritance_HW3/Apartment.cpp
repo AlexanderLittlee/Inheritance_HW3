@@ -13,7 +13,7 @@ int Apartment::total_cost(const int& numberOfMonths = 1)
 	if (this->get_people() == 0)
 		return 1;
 
-	return this->Rentable::total_cost(numberOfMonths) / this->get_people();
+	return (this->get_area()*this->get_costpersqrm() / this->get_people())*numberOfMonths;
 }
 
 
@@ -25,13 +25,13 @@ bool Apartment::is_reserved() const
 
 bool Apartment::reserve(const int& numberOfMonths)
 {
-	this->Rentable::reserve(numberOfMonths);
+	return this->Rentable::reserve(numberOfMonths);
 }
 
 
 bool Apartment::move_in(const int& noOfPeople)
 {
-	if (!(this->get_rooms() * 8 < this->get_people() + noOfPeople) || !(this->get_people() + noOfPeople < this->get_area() / 2))
+	if (!(this->get_rooms() * 8 > this->get_people() + noOfPeople && this->get_people() + noOfPeople < this->get_area() / 2))
 		return false;
 
 	Flat::move_in(noOfPeople);
@@ -40,12 +40,12 @@ bool Apartment::move_in(const int& noOfPeople)
 
 std::ostream& operator<<(std::ostream& outputStream, const Apartment& apartment)
 {
-	outputStream << "/ "
+	outputStream << "/  "
 					<< "Area: " << apartment.get_area() << "m2 | " 
 					<< "Rooms: " << apartment.get_rooms() << " | " 
 					<< "People: " << apartment.get_people() << " | " 
-					<< "Cost per squaremeter: " << apartment.get_costpersqrm() 
-					<< "Reserved for: " << apartment.mReservedFor << "(moths) | "
-				<< " /";
+					<< "Cost per squaremeter: " << apartment.get_costpersqrm()  <<" | "
+					<< "Reserved for: " << apartment.mReservedFor << "(moths)"
+				<< "  /";
 	return outputStream;
 }

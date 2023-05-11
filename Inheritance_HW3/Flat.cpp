@@ -49,11 +49,11 @@ int Flat::get_costpersqrm() const
 
 std::ostream& operator<<(std::ostream& outputStream, const Flat& flat)
 {
-	outputStream << "/ "
+	outputStream << "/  "
 					<< "Area: " << flat.mArea << "m2 | "  
 					<< "Rooms: " << flat.mRooms << " | " 
 					<< "People: " << flat.mPeople << " | " 
 					<< "Cost per squaremeter: " << flat.mCostPerSqrmtr
-				<< " /";
+				<< "  /";
 	return outputStream;
 }
