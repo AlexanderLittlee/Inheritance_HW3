@@ -33,6 +33,9 @@
     <ClCompile Include="Garage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SemiDetachedHouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RealEstate.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Garage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemiDetachedHouse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

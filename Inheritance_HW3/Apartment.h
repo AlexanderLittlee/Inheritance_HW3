@@ -2,7 +2,7 @@
 #include "Flat.h"
 #include "Rentable.h"
 
-class Apartment: public Flat, public Rentable
+class Apartment: public Flat, public Rentable	//Alberlet
 {
 public:
 	Apartment(const int& area, const int& rooms, const int& costpersqrmtr, const int& people = 0, const int& reservedfor = 0);

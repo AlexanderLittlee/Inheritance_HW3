@@ -1,7 +1,8 @@
 #pragma once
 
 
-class Rentable {
+class Rentable	//Berelheto
+{
 public:
 	virtual int abst() = 0;
 

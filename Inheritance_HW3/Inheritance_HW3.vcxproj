@@ -133,6 +133,7 @@
     <ClCompile Include="Garage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Rentable.cpp" />
+    <ClCompile Include="SemiDetachedHouse.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apartment.h" />
@@ -141,6 +142,7 @@
     <ClInclude Include="Garage.h" />
     <ClInclude Include="RealEstate.h" />
     <ClInclude Include="Rentable.h" />
+    <ClInclude Include="SemiDetachedHouse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

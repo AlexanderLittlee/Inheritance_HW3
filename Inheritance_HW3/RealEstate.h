@@ -1,7 +1,7 @@
 #pragma once
 
 
-class RealEstate 
+class RealEstate	//Ingatlan
 {
 public:
 	virtual int abs() = 0;

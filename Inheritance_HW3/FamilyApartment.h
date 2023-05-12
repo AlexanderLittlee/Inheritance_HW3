@@ -1,6 +1,6 @@
 #pragma once
 #include "Flat.h"
-class FamilyApartment : public Flat
+class FamilyApartment : public Flat		//CsaladiApartman
 {
 public:
 	FamilyApartment(const int& area, const int& rooms, const int& costpersqrmtr, const int& people=0, const int& children=0);

@@ -2,7 +2,7 @@
 #include "RealEstate.h"
 #include <string>
 
-class Flat : public RealEstate
+class Flat : public RealEstate	//Lakas
 {
 public:
 	Flat(const int& area, const int& rooms, const int& people, const int& costpersqrmtr);
