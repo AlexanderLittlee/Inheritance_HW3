@@ -16,10 +16,10 @@ bool Rentable::reserve(const int& numberOfMonths)
 {
 	if (mReserved)
 		return false;
-
-	mReservedForThisLong = numberOfMonths;
-	mReserved = true;
-	return mReserved;
+	else
+		mReservedForThisLong = numberOfMonths;
+		mReserved = true;
+		return mReserved;
 }
 
 void Rentable::set_reservation(const int& length)

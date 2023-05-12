@@ -26,6 +26,6 @@ private:
 	int mPeople;
 	int mCostPerSqrmtr;
 
-	int abs() override {};
+	int abs() override { return 0; };
 };
 

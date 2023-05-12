@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Apartment.h"
 #include "FamilyApartment.h"
+#include "Garage.h"
 
 //majd a végén át kéne írni uint16_t-re és összehasonlítani a futásidõt
 using namespace std;
@@ -36,6 +37,14 @@ int main() {
 	//cout << f.move_in(2) << endl;
 	//cout << f.child_born() << endl;
 	//cout << f << endl << endl;
+
+	Garage g(10, 5, 0);
+	cout << g << endl;
+	cout << g.total_cost(1) << endl;
+	cout << g.reserve(2) << endl;
+	cout << g.reserve(1) << endl;
+	g.move_car();
+	cout << g << endl;
 
 	
 	return 1;

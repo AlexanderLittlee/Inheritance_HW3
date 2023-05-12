@@ -36,7 +36,10 @@ bool Garage::is_reserved() const
 
 bool Garage::reserve(const int& numberOfMonths)
 {
-	Rentable::reserve(numberOfMonths);
+	if (Rentable::reserve(numberOfMonths))
+		return true;
+	else
+		return false;
 }
 
 void Garage::move_car()

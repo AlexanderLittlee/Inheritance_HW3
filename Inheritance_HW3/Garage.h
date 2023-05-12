@@ -23,7 +23,7 @@ private:
 	bool mHeated;
 	bool mParkedIn;
 
-	int abs() override {}
-	int abst() override {}
+	int abs() override { return 0; }
+	int abst() override { return 0; }
 };
 
