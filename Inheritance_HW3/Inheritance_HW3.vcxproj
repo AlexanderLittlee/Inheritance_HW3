@@ -132,6 +132,7 @@
     <ClCompile Include="Flat.cpp" />
     <ClCompile Include="Garage.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Owner.cpp" />
     <ClCompile Include="Rentable.cpp" />
     <ClCompile Include="SemiDetachedHouse.cpp" />
   </ItemGroup>
@@ -140,6 +141,7 @@
     <ClInclude Include="FamilyApartment.h" />
     <ClInclude Include="Flat.h" />
     <ClInclude Include="Garage.h" />
+    <ClInclude Include="Owner.h" />
     <ClInclude Include="RealEstate.h" />
     <ClInclude Include="Rentable.h" />
     <ClInclude Include="SemiDetachedHouse.h" />

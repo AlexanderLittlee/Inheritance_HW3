@@ -8,7 +8,7 @@ using namespace std;
 class SemiDetachedHouse		//Tarsashaz
 {
 public:
-	SemiDetachedHouse(const int& flats, const int& garages);
+	SemiDetachedHouse(const int& flats=4, const int& garages=4);
 
 	bool add_flat(const Flat& flat);
 	bool add_garage(const Garage& garage);

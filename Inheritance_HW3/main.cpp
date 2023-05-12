@@ -13,16 +13,16 @@ int main() {
 	// trying stuff
 	{
 
-		Flat f(100, 4, 2, 200);
-		Flat f2(100, 4, 3, 200);
-		Flat f3(100, 4, 4, 200);
-		SemiDetachedHouse sdh(4, 2);
-		bool adding = sdh.add_flat(f);
-		bool adding2 = sdh.add_flat(f2);
-		bool adding3 = sdh.add_flat(f3);
-		int totalcost = sdh.total_value();
-		int ppl = sdh.all_people();
-		cout << adding << endl << adding2 << endl << adding3 << endl << totalcost << endl << ppl << endl;
+		//Flat f(100, 4, 2, 200);
+		//Flat f2(100, 4, 3, 200);
+		//Flat f3(100, 4, 4, 200);
+		//SemiDetachedHouse sdh(4, 2);
+		//bool adding = sdh.add_flat(f);
+		//bool adding2 = sdh.add_flat(f2);
+		//bool adding3 = sdh.add_flat(f3);
+		//int totalcost = sdh.total_value();
+		//int ppl = sdh.all_people();
+		//cout << adding << endl << adding2 << endl << adding3 << endl << totalcost << endl << ppl << endl;
 		//cout << f << endl;
 		//cout << f.get_cost() << endl;
 		//cout << f.get_people() << endl;
