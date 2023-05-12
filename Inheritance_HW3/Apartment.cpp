@@ -44,7 +44,7 @@ std::ostream& operator<<(std::ostream& outputStream, const Apartment& apartment)
 					<< "Area: " << apartment.get_area() << "m2 | " 
 					<< "Rooms: " << apartment.get_rooms() << " | " 
 					<< "People: " << apartment.get_people() << " | " 
-					<< "Cost per squaremeter: " << apartment.get_costpersqrm()  <<" | "
+					<< "Cost per m2: " << apartment.get_costpersqrm()  <<" | "
 					<< "Reserved for: " << apartment.mReservedFor << "(moths)"
 				<< "  /";
 	return outputStream;

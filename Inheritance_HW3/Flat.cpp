@@ -53,7 +53,7 @@ std::ostream& operator<<(std::ostream& outputStream, const Flat& flat)
 					<< "Area: " << flat.mArea << "m2 | "  
 					<< "Rooms: " << flat.mRooms << " | " 
 					<< "People: " << flat.mPeople << " | " 
-					<< "Cost per squaremeter: " << flat.mCostPerSqrmtr
+					<< "Cost per m2: " << flat.mCostPerSqrmtr
 				<< "  /";
 	return outputStream;
 }
