@@ -21,3 +21,13 @@ bool Rentable::reserve(const int& numberOfMonths)
 	mReserved = true;
 	return mReserved;
 }
+
+void Rentable::set_reservation(const int& length)
+{
+	mReservedForThisLong = length;
+}
+
+int Rentable::get_reservation() const
+{
+	return mReservedForThisLong;
+}

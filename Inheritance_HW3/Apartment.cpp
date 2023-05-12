@@ -40,7 +40,7 @@ bool Apartment::move_in(const int& noOfPeople)
 
 std::ostream& operator<<(std::ostream& outputStream, const Apartment& apartment)
 {
-	outputStream << "/  "
+	outputStream << "APARTMENT /  "
 					<< "Area: " << apartment.get_area() << "m2 | " 
 					<< "Rooms: " << apartment.get_rooms() << " | " 
 					<< "People: " << apartment.get_people() << " | " 

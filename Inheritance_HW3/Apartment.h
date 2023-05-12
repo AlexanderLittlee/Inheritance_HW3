@@ -19,6 +19,6 @@ public:
 private:
 	int mReservedFor;
 
-	int abst() override { return 0; };
+	int abst() override {};
 };
 

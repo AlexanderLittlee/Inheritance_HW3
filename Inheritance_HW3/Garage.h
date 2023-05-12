@@ -1,0 +1,29 @@
+#pragma once
+#include "RealEstate.h"
+#include "Rentable.h"
+#include <ostream>
+
+class Garage : public Rentable, public RealEstate
+{
+public:
+	Garage(const int& area, const int& costprsqm, const bool& heated, const bool& car=0, const int& reservedfor=0 );
+
+	int get_cost() const override;
+	int total_cost(const int& numberOfMonths) override;
+	bool is_reserved() const override;
+	bool reserve(const int& numberOfMonths) override;
+
+	void move_car();
+
+	friend std::ostream& operator<<(std::ostream& outputStream, const Garage& garage);
+
+private:
+	int mArea;
+	int mCostPerSqrmtr;
+	bool mHeated;
+	bool mParkedIn;
+
+	int abs() override {}
+	int abst() override {}
+};
+

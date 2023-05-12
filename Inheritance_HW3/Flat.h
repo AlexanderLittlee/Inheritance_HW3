@@ -19,12 +19,13 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& outputStream, const Flat& flat);
 
-	int abst() override;
 
 private:
 	int mArea;
 	int mRooms;
 	int mPeople;
 	int mCostPerSqrmtr;
+
+	int abs() override {};
 };
 

@@ -8,7 +8,7 @@ Flat::Flat(const int& area, const int& rooms, const int& people, const int& cost
 	,	mCostPerSqrmtr(costpersqrmtr)
 {}
 
-int Flat::abst() { return 0; }
+
 
 bool Flat::move_in(const int& noOfPeople)
 {
@@ -49,7 +49,7 @@ int Flat::get_costpersqrm() const
 
 std::ostream& operator<<(std::ostream& outputStream, const Flat& flat)
 {
-	outputStream << "/  "
+	outputStream << "FLAT /  "
 					<< "Area: " << flat.mArea << "m2 | "  
 					<< "Rooms: " << flat.mRooms << " | " 
 					<< "People: " << flat.mPeople << " | " 

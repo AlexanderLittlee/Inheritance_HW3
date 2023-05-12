@@ -9,6 +9,9 @@ public:
 	virtual bool is_reserved() const;
 	virtual bool reserve(const int& numberOfMonths);
 
+	void set_reservation(const int& length);
+	int get_reservation() const;
+
 private:
 	int mCostPerMonth;
 	int mReservedForThisLong;

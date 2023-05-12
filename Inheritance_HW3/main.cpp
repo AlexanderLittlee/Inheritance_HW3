@@ -31,11 +31,11 @@ int main() {
 	//cout << a << endl << endl;
 	
 
-	FamilyApartment f(60,3,10);
-	cout << f << endl;
-	cout << f.move_in(2) << endl;
-	cout << f.child_born() << endl;
-	cout << f << endl;
+	//FamilyApartment f(60,3,10);
+	//cout << f << endl;
+	//cout << f.move_in(2) << endl;
+	//cout << f.child_born() << endl;
+	//cout << f << endl << endl;
 
 	
 	return 1;
