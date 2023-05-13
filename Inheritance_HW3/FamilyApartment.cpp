@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-FamilyApartment::FamilyApartment(const int& area, const int& rooms, const int& costpersqrmtr, const int& people, const int& children)
+FamilyApartment::FamilyApartment(const double& area, const int& rooms, const int& costpersqrmtr, const int& people, const int& children)
 	: Flat::Flat(area, rooms, people, costpersqrmtr)
 	, mChildren(children)
 {}

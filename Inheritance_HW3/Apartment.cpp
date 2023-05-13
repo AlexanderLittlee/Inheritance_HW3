@@ -1,7 +1,7 @@
 #include "Apartment.h"
 #include <iostream>
 
-Apartment::Apartment(const int& area, const int& rooms, const int& costpersqrmtr,const int& people, const int& reservedfor)
+Apartment::Apartment(const double& area, const int& rooms, const int& costpersqrmtr,const int& people, const int& reservedfor)
 	: Flat(area,rooms,people,costpersqrmtr)
 	, mReservedFor(reservedfor)
 {

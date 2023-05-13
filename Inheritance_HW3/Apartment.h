@@ -5,7 +5,7 @@
 class Apartment: public Flat, public Rentable	//Alberlet
 {
 public:
-	Apartment(const int& area, const int& rooms, const int& costpersqrmtr, const int& people = 0, const int& reservedfor = 0);
+	Apartment(const double& area, const int& rooms, const int& costpersqrmtr, const int& people = 0, const int& reservedfor = 0);
 
 	int total_cost(const int& numberOfMonths) override;
 	bool is_reserved() const override;

@@ -1,6 +1,6 @@
 #include "Garage.h"
 
-Garage::Garage(const int& area, const int& costprsqm, const bool& heated, const bool& car, const int& reservedfor)
+Garage::Garage(const double& area, const int& costprsqm, const bool& heated, const bool& car, const int& reservedfor)
 	: mArea(area)
 	, mCostPerSqrmtr(costprsqm)
 	, mHeated(heated)

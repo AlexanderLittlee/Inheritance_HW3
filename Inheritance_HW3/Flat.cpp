@@ -1,7 +1,7 @@
 #include "Flat.h"
 #include <iostream>
 
-Flat::Flat(const int& area, const int& rooms, const int& people, const int& costpersqrmtr)
+Flat::Flat(const double& area, const int& rooms, const int& people, const int& costpersqrmtr)
 	:	mArea(area)
 	,	mRooms(rooms)
 	,	mPeople(people)

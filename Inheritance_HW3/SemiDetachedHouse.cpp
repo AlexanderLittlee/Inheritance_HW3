@@ -51,3 +51,13 @@ int SemiDetachedHouse::total_value() const
 	return tcost;
 }
 
+vector<Flat> SemiDetachedHouse::get_flats() const
+{
+	return mFlats;
+}
+
+vector<Garage> SemiDetachedHouse::get_garages() const
+{ 
+	return mGarages;
+}
+

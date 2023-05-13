@@ -14,7 +14,8 @@ public:
 	bool add_garage(const Garage& garage);
 	int all_people() const;
 	int total_value() const;
-
+	vector<Flat> get_flats() const;
+	vector<Garage> get_garages() const;
 
 private:
 	int mMaxFlats;

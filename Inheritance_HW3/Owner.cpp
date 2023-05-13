@@ -76,10 +76,10 @@ void Owner::add2sdh(const string& line,  SemiDetachedHouse& sdh)
 
 void Owner::addAlbi(const vector<string>& albinfo,  SemiDetachedHouse& sdh)
 {
-	vector<int> info(albinfo.size());
+	vector<double> info(albinfo.size());
 	
 	transform(albinfo.begin(), albinfo.end(), info.begin(),
-		[](const string& s) { return stoi(s); });
+		[](const string& s) { return stod(s); });
 
 	Apartment a(info[0], info[1], info[2]);
 	sdh.add_flat(a);
@@ -88,10 +88,10 @@ void Owner::addAlbi(const vector<string>& albinfo,  SemiDetachedHouse& sdh)
 //ezt a kettõt össze lehetne vonni még
 void Owner::addCsalbi(const vector<string>& csalbinfo,  SemiDetachedHouse& sdh)
 {
-	vector<int> info(csalbinfo.size());
+	vector<double> info(csalbinfo.size());
 
 	transform(csalbinfo.begin(), csalbinfo.end(), info.begin(),
-		[](const string& s) { return stoi(s); });
+		[](const string& s) { return stod(s); });
 
 	FamilyApartment a(info[0], info[1], info[2]);
 	sdh.add_flat(a);
@@ -100,10 +100,10 @@ void Owner::addCsalbi(const vector<string>& csalbinfo,  SemiDetachedHouse& sdh)
 
 void Owner::addGarazs(const vector<string>& garinfo, SemiDetachedHouse& sdh)
 {
-	vector<int> info(garinfo.size()-1);
+	vector<double> info(garinfo.size()-1);
 
 	transform(garinfo.begin(), garinfo.end()-1, info.begin(),
-		[](const string& s) { return stoi(s); });
+		[](const string& s) { return stod(s); });
 
 	bool futott = garinfo[2] == "futott";
 

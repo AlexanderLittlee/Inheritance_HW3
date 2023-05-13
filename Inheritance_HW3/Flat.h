@@ -5,7 +5,7 @@
 class Flat : public RealEstate	//Lakas
 {
 public:
-	Flat(const int& area, const int& rooms, const int& people, const int& costpersqrmtr);
+	Flat(const double& area, const int& rooms, const int& people, const int& costpersqrmtr);
 	
 
 	virtual bool move_in(const int& noOfPeople);
@@ -21,7 +21,7 @@ public:
 
 
 private:
-	int mArea;
+	double mArea;
 	int mRooms;
 	int mPeople;
 	int mCostPerSqrmtr;
