@@ -1,5 +1,6 @@
 #pragma once
 #include "Flat.h"
+
 class FamilyApartment : public Flat		//CsaladiApartman
 {
 public:

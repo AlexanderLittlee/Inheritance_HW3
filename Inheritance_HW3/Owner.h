@@ -4,14 +4,20 @@
 
 using namespace std;
 
-static class Owner
+class Owner
 {
 public:
-	static void maintain(const string& path);
+	static void maintain(const string& path, vector<SemiDetachedHouse>& vec);
+
+	vector<SemiDetachedHouse> get_houses();
+
 private:
+	vector<SemiDetachedHouse> mHouses;
+
 	static void add2sdh(const string& line,  SemiDetachedHouse& sdh);
 	static void addAlbi(const vector<string>& albinfo, SemiDetachedHouse& sdh);
 	static void addCsalbi(const vector<string>& csalbinfo, SemiDetachedHouse& sdh);
 	static void addGarazs(const vector<string>& garinfo, SemiDetachedHouse& sdh);
+	
 };
 

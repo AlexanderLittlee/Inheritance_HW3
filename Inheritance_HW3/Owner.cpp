@@ -10,10 +10,18 @@
 #include "Garage.h"
 
 
-void Owner::maintain(const string& path)
+vector<SemiDetachedHouse> Owner::get_houses()
+{
+	return mHouses;
+}
+
+
+void Owner::maintain(const string& path, vector<SemiDetachedHouse>& vec)
 {
 	SemiDetachedHouse sdh(4,2);
-	std::ifstream inputfile("ingredients.txt");
+
+
+	std::ifstream inputfile(path);
 	if (!inputfile.is_open())
 		return;
 
@@ -26,7 +34,13 @@ void Owner::maintain(const string& path)
 
 		add2sdh(s, sdh);
 	}
+	
+	vec.push_back(sdh);
+
+	inputfile.close();
 }
+
+
 
 
 void Owner::add2sdh(const string& line,  SemiDetachedHouse& sdh)
@@ -45,7 +59,7 @@ void Owner::add2sdh(const string& line,  SemiDetachedHouse& sdh)
 		elements.erase(elements.begin());
 		addAlbi(elements, sdh);
 	}
-	else if (elements[0] == "CsaládiApartman")
+	else if (elements[0] == "CsaladiApartman")
 	{
 		elements.erase(elements.begin());
 		addCsalbi(elements, sdh);
@@ -96,10 +110,3 @@ void Owner::addGarazs(const vector<string>& garinfo, SemiDetachedHouse& sdh)
 	Garage g(info[0], info[1], futott);
 	sdh.add_garage(g);
 }
-
-
-//minta file
-
-//Alberlet 50.2 5 13000
-//CsaladiApartman 62.8 2 40000
-//Garazs 10.3 5000 futott
